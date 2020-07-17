@@ -1,0 +1,21 @@
+{
+  "name": "webnature__api",
+  "version": "1.0.0",
+  "description": "webnature backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sh ./scripts/build.sh",
+    "deploy": "npm run build && sh ./scripts/deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacomisval/webNature__API.git"
+  },
+  "author": "Francisco Barrachina Blanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacomisval/webNature__API/issues"
+  },
+  "homepage": "https://github.com/pacomisval/webNature__API#readme"
+}
