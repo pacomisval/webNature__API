@@ -67,7 +67,7 @@ func main() {
 		handlers.AllowedOrigins([]string{"*"}))(router)))
 
 }
-
+//////////////////// ENDPONITS CAROUSEL ///////////////////////
 func getImagesCarousel(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var images []Carousel
@@ -91,7 +91,8 @@ func getImagesCarousel(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Println("RESPONSE EN GET IMAGES CAROUSEL")
 }
-
+///////////////////////////// FIN CAROUSEL ////////////////////////
+/////////////////////// ENDPOINS CATEGORIAS /////////////////////////
 func getCategorias(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var categorias []Categoria
@@ -115,7 +116,8 @@ func getCategorias(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Println("RESPONSE EN GET CATEGORIAS")	
 }
-
+///////////////////// FIN CATEGORIAS /////////////////////////////
+///////////////////// ENDPOINTS PRODUCTOS //////////////////////////
 func getAllProductos(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	var productos []Producto
@@ -169,4 +171,5 @@ func getProductosByIdCategoria(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("RESPONSE EN GET PRODUCTO POR IDCATEGORIA")
 }
 
+///////////////////////////// FIN PRODUCTOS /////////////////////////
 
